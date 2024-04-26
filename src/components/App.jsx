@@ -4,18 +4,18 @@ import Header from './Header'
 import Note from './Note'
 import notes from '../notes.js'
 import "./App.css"
-const note = x=>{
-  return <Note
-  key={x.key}
-  title={x.title}
-  content={x.content}
-  />
-}
+
 const App = () => {
   return (
     <div>
       <Header/>
-      {notes.map(note)}
+      {notes.map(x=>(
+      <Note
+        key={x.key}
+        title={x.title}
+        content={x.content}
+  />)
+  )}
       <Footer/>
     </div>
   )
