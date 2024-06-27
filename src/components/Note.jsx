@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Note = (props) => {
+function Note(props) {
   return (
-    <div className='note'>
-      <h1>{props.title}</h1>
-      <p>{props.content}</p>
+    <div className="note">
+      <h1>{props.ti}</h1>
+      <p>{props.con}</p>
+      <button onClick={()=> (props.del(props.id))}>DELETE</button>
     </div>
-  )
+  );
 }
 
 export default Note;

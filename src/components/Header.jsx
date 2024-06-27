@@ -1,11 +1,11 @@
 import React from "react";
-import "./App.css";
-function Header(){
-    return (<div className="Header">
-        <h1>
-        Keeper App
-    </h1>
-        </div>
-    );
+
+function Header() {
+  return (
+    <header>
+      <h1>Keeper</h1>
+    </header>
+  );
 }
+
 export default Header;
